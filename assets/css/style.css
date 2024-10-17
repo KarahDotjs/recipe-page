@@ -8,20 +8,6 @@
   --Rose800: hsl(332, 51%, 32%);
   --Rose-50: hsl(330, 100%, 98%);
 }
-
-main {
-  width: 100%;
-  height: 100%;
-  padding: 50px;
-  background-color: #f3e5d7;
-  height: 1440px;
-}
-
-.main-container {
-  width: 100%;
-  height: 100%;
-}
-
 @font-face {
   font-family: body;
   src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
@@ -37,6 +23,24 @@ main {
   font-weight: lighter;
   font-size: 16px;
 }
+body {
+    background-color: #f3e5d7;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px;
+  /* background-color: #f3e5d7; */
+  height: 1440px;
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+}
+
+
 
 section {
   width: 50%;
@@ -58,8 +62,8 @@ img {
 h1 {
   text-align: left;
   font-family: title;
-  font-size: 26px;
-  margin-bottom: 10px;
+  font-size: 45px;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -155,10 +159,10 @@ ol li::marker {
   
 }
 
-/* .attribution {
+.attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-} */
+}
