@@ -1,0 +1,130 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Brown: hsl(14, 45%, 36%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Rose800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+main {
+  padding: 50px;
+  background-color: #f3e5d7;
+  height: 1440px;
+}
+
+@font-face {
+  font-family: body;
+  src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: title;
+  src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+* {
+  font-family: body;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+section {
+  width: 50%;
+  padding: 35px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 7px grey;
+  margin: 0px auto;
+}
+
+img {
+  /* aspect-ratio: 16/10; */
+  object-fit: cover;
+  object-fit: top;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+h1 {
+  text-align: left;
+  font-family: title;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+section > p {
+  line-height: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.default {
+  padding: 25px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 20px;
+}
+/* --- prep-time --- */
+.prep-time > p {
+  margin-bottom: 10px;
+  color: var(--Rose800);
+
+  font-weight: 400;
+}
+
+.prep-time {
+  border-radius: 10px;
+  background-color: hsl(330, 100%, 98%);
+  border-bottom: none;
+}
+
+li {
+  margin-left: 20px;
+  line-height: 30px;
+}
+
+li > span {
+  font-weight: 400;
+  font-family: body;
+}
+ /* --- Ingredients --- */
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid lightgrey;
+  padding: 20px;
+}
+h2 {
+  font-family: title;
+  color: hsl(14, 45%, 36%);
+}
+.ingredients li {
+  line-height: 20px;
+  font-family: body;
+}
+
+/* --- instruction --- */
+
+.instructions li {
+  line-height: 25px;
+}
+
+ol li::marker {
+  color: var(--Brown);
+  font-weight: bold;
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
